@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="434.0" prefWidth="720.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.hostel.controller.ManageStudentsFormController">
+   <children>
+      <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="14.0" layoutY="21.0" onMouseClicked="#backBtnOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/backbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="209.0" layoutY="19.0" opacity="0.62" text="Manage Students" textFill="#457ceb">
+         <font>
+            <Font name="Bell MT" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="164.0" layoutY="22.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/student.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="txtStudentID" layoutX="23.0" layoutY="93.0" opacity="0.67" prefHeight="31.0" prefWidth="195.0" promptText="Student ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="406.0" layoutY="100.0" opacity="0.67" prefHeight="31.0" prefWidth="281.0" promptText="Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="23.0" layoutY="170.0" opacity="0.67" prefHeight="31.0" prefWidth="195.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContactNo" layoutX="406.0" layoutY="170.0" opacity="0.67" prefHeight="31.0" prefWidth="281.0" promptText="Contact NO">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDateOfBirth" layoutX="23.0" layoutY="259.0" opacity="0.67" prefHeight="31.0" prefWidth="195.0" promptText="Date Of Birth">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtGender" layoutX="406.0" layoutY="259.0" opacity="0.67" prefHeight="31.0" prefWidth="281.0" promptText="Gender">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="33.0" layoutY="369.0" onAction="#btnSaveOnAction" opacity="0.94" prefHeight="31.0" prefWidth="101.0" styleClass="CrudOperation-Addbtn" stylesheets="@../../../../style.css" text="Save" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="163.0" layoutY="369.0" onAction="#btnUpdateOnAction" opacity="0.94" prefHeight="33.0" prefWidth="119.0" styleClass="CrudOperation-UPDATEbtn" stylesheets="@../../../../style.css" text="Update" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="312.0" layoutY="369.0" onAction="#btnDeleteOnAction" opacity="0.94" prefHeight="33.0" prefWidth="111.0" styleClass="CrudOperation-DELETEbtn" stylesheets="@../../../../style.css" text="Delete" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="595.0" layoutY="369.0" onAction="#btnClearOnAction" opacity="0.94" prefHeight="33.0" prefWidth="111.0" styleClass="CrudOperation-CLEARbtn" stylesheets="@../../../../style.css" text="Clear" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="459.0" layoutY="368.0" onAction="#btnSearchOnAction" opacity="0.94" prefHeight="33.0" prefWidth="111.0" styleClass="CrudOperation-SEARCHbtn" stylesheets="@../../../../style.css" text="Search" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="43.0" fitWidth="47.0" layoutX="629.0" layoutY="20.0" onMouseClicked="#btnSearchBtnOnAction" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/searchbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

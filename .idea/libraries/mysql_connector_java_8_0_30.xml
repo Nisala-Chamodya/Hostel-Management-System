@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-8.0.30">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lk/blacky/hostel/lib/mysql-connector-java-8.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/blacky/hostel/lib/txw2-2.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/blacky/hostel/lib/stax-ex-1.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

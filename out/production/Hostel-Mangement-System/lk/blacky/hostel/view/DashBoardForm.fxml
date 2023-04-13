@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="584.0" prefWidth="802.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.hostel.controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="66.0" fitWidth="75.0" layoutX="21.0" layoutY="23.0" opacity="0.63" pickOnBounds="true" preserveRatio="true" style="visibility: 0.5;">
+         <image>
+            <Image url="@../assets/icon24.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="357.0" layoutY="452.0" opacity="0.59" prefHeight="21.0" prefWidth="75.0" text="V1.0.0" textFill="#0d00ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="19.0" opacity="0.47" prefHeight="74.0" prefWidth="142.0" text="D24" textFill="#356bd7">
+         <font>
+            <Font name="Cambria Math" size="65.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="83.0" opacity="0.46" text="Hostel  Accommodations " textFill="#356bd7">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="323.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/hostalicon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="86.0" layoutY="234.0" onMouseClicked="#btnManageStudentOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/student.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="142.0" layoutX="548.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/reservation.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="315.0" layoutY="377.0" opacity="0.67" prefHeight="23.0" prefWidth="133.0" text="Manage Rooms" textFill="#356bd7">
+         <font>
+            <Font name="Bell MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="377.0" opacity="0.67" prefHeight="23.0" prefWidth="157.0" text="ManageStudents" textFill="#356bd7">
+         <font>
+            <Font name="Bell MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="548.0" layoutY="377.0" opacity="0.67" prefHeight="23.0" prefWidth="157.0" text="Reservation" textFill="#356bd7">
+         <font>
+            <Font name="Bell MT Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
