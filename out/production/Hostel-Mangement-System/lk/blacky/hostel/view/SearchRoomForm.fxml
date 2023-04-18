@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.hostel.controller.SearchRoomFormController">
+   <children>
+      <Label layoutX="214.0" layoutY="26.0" opacity="0.62" prefHeight="43.0" prefWidth="210.0" text="View Rooms" textFill="#457ceb">
+         <font>
+            <Font name="Bell MT" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="172.0" layoutY="30.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/student.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="23.0" layoutY="28.0" onMouseClicked="#backBtnOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/backbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TableView fx:id="tblRoom" layoutX="45.0" layoutY="100.0" prefHeight="236.0" prefWidth="507.0">
+        <columns>
+          <TableColumn fx:id="colRoomTypeId" prefWidth="115.0" text="roomTypeId" />
+          <TableColumn fx:id="colType" prefWidth="100.0" text="type" />
+            <TableColumn fx:id="colKeyMoney" prefWidth="128.0" text="keyMoney" />
+            <TableColumn fx:id="colQty" prefWidth="163.0" text="qty" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

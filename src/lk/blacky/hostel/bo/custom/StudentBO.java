@@ -13,5 +13,10 @@ public interface StudentBO extends SuperBO {
     boolean deleteStudent(String id);
     ObservableList<StudentDTO> getAllStudentById(String id);
     ObservableList<StudentDTO> getAllStudent();
+    ObservableList<String> getStudentIds();
+    String getStudentName(Object id);
+
+
+
 
 }

@@ -24,4 +24,17 @@ public class Room {
 
     @OneToMany(mappedBy = "room",cascade = CascadeType.ALL)
     private List<Reservation> roomDetail;
+
+    public Room(String roomTypeId, String type, String keyMoney, int qty) {
+        this.roomTypeId = roomTypeId;
+        this.type = type;
+        this.keyMoney = keyMoney;
+        this.qty = qty;
+    }
+
+    public Room(String type, String keyMoney, int qty) {
+        this.type = type;
+        this.keyMoney = keyMoney;
+        this.qty = qty;
+    }
 }

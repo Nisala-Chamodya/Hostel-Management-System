@@ -22,4 +22,12 @@ public class DashBoardFormController {
     public void btnManageStudentOnClickAction(MouseEvent mouseEvent) throws IOException {
         Navigation.navigate(Routes.MANAGESTUDENTS,pane);
     }
+
+    public void btnManageRoomOnAction(MouseEvent mouseEvent) throws IOException {
+        Navigation.navigate(Routes.MANAGEROOM,pane);
+    }
+
+    public void reservationBtnOnAction(MouseEvent mouseEvent) throws IOException {
+        Navigation.navigate(Routes.RESERVATION,pane);
+    }
 }

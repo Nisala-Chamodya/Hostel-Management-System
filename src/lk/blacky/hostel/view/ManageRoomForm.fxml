@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="463.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.hostel.controller.ManageRoomFormController">
+   <children>
+      <Label layoutX="280.0" layoutY="14.0" opacity="0.62" text="Manage Rooms" textFill="#457ceb">
+         <font>
+            <Font name="Bell MT" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="228.0" layoutY="17.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/hostalicon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backBtnOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/backbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="txtRoomTypeId" layoutX="33.0" layoutY="103.0" opacity="0.67" prefHeight="31.0" prefWidth="195.0" promptText="Room-Type-Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtType" layoutX="460.0" layoutY="103.0" opacity="0.67" prefHeight="31.0" prefWidth="195.0" promptText="Type">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtKeyMoney" layoutX="33.0" layoutY="208.0" opacity="0.67" prefHeight="31.0" prefWidth="195.0" promptText="Key-Money">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQty" layoutX="460.0" layoutY="208.0" opacity="0.67" prefHeight="31.0" prefWidth="195.0" promptText="QTY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="634.0" layoutY="14.0" onMouseClicked="#btnSearchIconOnAction" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/searchbtn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton layoutX="14.0" layoutY="376.0" onAction="#btnSaveOnAction" opacity="0.94" prefHeight="31.0" prefWidth="101.0" styleClass="CrudOperation-Addbtn" stylesheets="@../../../../style.css" text="Save" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="147.0" layoutY="375.0" onAction="#btnUpdateOnAction" opacity="0.94" prefHeight="33.0" prefWidth="119.0" styleClass="CrudOperation-UPDATEbtn" stylesheets="@../../../../style.css" text="Update" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="308.0" layoutY="375.0" onAction="#btnDeleteOnAction" opacity="0.94" prefHeight="33.0" prefWidth="111.0" styleClass="CrudOperation-DELETEbtn" stylesheets="@../../../../style.css" text="Delete" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="460.0" layoutY="375.0" onAction="#btnSearchOnAction" opacity="0.94" prefHeight="33.0" prefWidth="111.0" styleClass="CrudOperation-SEARCHbtn" stylesheets="@../../../../style.css" text="Search" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="600.0" layoutY="375.0" onAction="#btnClearOnAction" opacity="0.94" prefHeight="33.0" prefWidth="111.0" styleClass="CrudOperation-CLEARbtn" stylesheets="@../../../../style.css" text="Clear" textFill="#59087c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

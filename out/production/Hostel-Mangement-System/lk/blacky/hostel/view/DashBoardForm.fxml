@@ -29,7 +29,7 @@
             <Font name="System Bold Italic" size="37.0" />
          </font>
       </Label>
-      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="323.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="323.0" layoutY="234.0" onMouseClicked="#btnManageRoomOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/hostalicon.png" />
          </image>
@@ -45,7 +45,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="133.0" fitWidth="142.0" layoutX="548.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="133.0" fitWidth="142.0" layoutX="548.0" layoutY="244.0" onMouseClicked="#reservationBtnOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/reservation.png" />
          </image>

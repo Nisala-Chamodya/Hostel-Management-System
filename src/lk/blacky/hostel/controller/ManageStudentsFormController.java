@@ -84,7 +84,7 @@ public class ManageStudentsFormController {
                 txtName.setStyle("-jfx-unfocus-color : red");
             }
         } else {
-            new Alert(Alert.AlertType.ERROR, "Please check the Valid Emp_Id. \n(S-001) Like That").show();
+            new Alert(Alert.AlertType.ERROR, "Please check the Valid Student-Id. \n(S-001) Like That").show();
             txtStudentID.setStyle("-jfx-unfocus-color : red");
         }
 
@@ -169,11 +169,19 @@ public class ManageStudentsFormController {
         try{
             ObservableList<StudentDTO> allStudentById = studentBO.getAllStudentById(txtStudentID.getText());
             for (StudentDTO s :allStudentById  ) {
+
                txtName.setText(s.getName());
                txtAddress.setText(s.getAddress());
-               txtContactNo.setText(s.getContactNo());
-               txtDateOfBirth.setText(s.getDob());
-               txtGender.setText(s.getGender());
+
+               txtContactNo.setText(s.getGender());
+
+               txtDateOfBirth.setText(s.getContactNo());
+
+               txtGender.setText(s.getDob());
+
+             /*   System.out.println(s.getContactNo() +"con");
+                System.out.println(s.getDob()+"dob");
+                System.out.println(s.getGender()+"gen");*/
                 
             }
         }catch (Exception e){

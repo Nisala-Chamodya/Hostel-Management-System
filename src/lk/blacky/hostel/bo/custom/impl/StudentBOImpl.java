@@ -82,5 +82,14 @@ public class StudentBOImpl implements StudentBO {
 
     }
 
+    @Override
+    public ObservableList<String> getStudentIds() {
+        return studentDAO.studentIdList();
+    }
+
+    @Override
+    public String getStudentName(Object id) {
+        return studentDAO.getName(id);    }
+
 
 }
