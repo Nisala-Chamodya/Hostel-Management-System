@@ -46,6 +46,10 @@ public class Navigation {
                 window.setTitle("Search Reservation");
                 initUI("SearchReservationForm.fxml");
                 break;
+            case SIGNUP:
+                window.setTitle("SignUp");
+                initUI("SignUpForm.fxml");
+                break;
 
 
 

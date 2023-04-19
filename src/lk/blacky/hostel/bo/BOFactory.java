@@ -3,6 +3,7 @@ package lk.blacky.hostel.bo;
 import lk.blacky.hostel.bo.custom.impl.ReservationBOImpl;
 import lk.blacky.hostel.bo.custom.impl.RoomBOImpl;
 import lk.blacky.hostel.bo.custom.impl.StudentBOImpl;
+import lk.blacky.hostel.bo.custom.impl.UserBOImpl;
 
 public class BOFactory {
     private static BOFactory boFactory;
@@ -17,7 +18,7 @@ public class BOFactory {
     }
 
     public enum BOTypes{
-        STUDENT,ROOM,RESERVATION
+        STUDENT,ROOM,RESERVATION,USER
     }
 
     public SuperBO getBO(BOTypes boTypes){
@@ -28,6 +29,8 @@ public class BOFactory {
                 return new RoomBOImpl();
             case STUDENT:
                 return new StudentBOImpl();
+            case USER:
+                return new UserBOImpl();
             default:
                 return null;
         }

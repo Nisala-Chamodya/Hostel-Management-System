@@ -1,9 +1,6 @@
 package lk.blacky.hostel.dao;
 
-import lk.blacky.hostel.dao.custom.impl.QueryDAOImpl;
-import lk.blacky.hostel.dao.custom.impl.ReservationDAOImpl;
-import lk.blacky.hostel.dao.custom.impl.RoomDAOImpl;
-import lk.blacky.hostel.dao.custom.impl.StudentDAOImpl;
+import lk.blacky.hostel.dao.custom.impl.*;
 
 public class DAOFactory {
     private static DAOFactory daoFactory;
@@ -18,7 +15,7 @@ public class DAOFactory {
     }
 
     public enum DAOTypes{
-        STUDENT,ROOM,RESERVATION,QUERY
+        STUDENT,ROOM,RESERVATION,QUERY,USER
     }
 
     public SuperDAO getDAO(DAOTypes daoTypes){
@@ -31,6 +28,8 @@ public class DAOFactory {
                 return new ReservationDAOImpl();
             case QUERY:
                 return  new QueryDAOImpl();
+            case USER:
+                return new UserDAOImpl();
             default:
                 return  null;
         }

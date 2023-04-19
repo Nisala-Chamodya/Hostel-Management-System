@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -9,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane" prefHeight="464.0" prefWidth="911.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.hostel.controller.LoginFormController">
+<AnchorPane fx:id="pane" prefHeight="464.0" prefWidth="703.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.hostel.controller.LoginFormController">
    <children>
-      <ImageView fitHeight="464.0" fitWidth="419.0" opacity="0.62" pickOnBounds="true">
+      <ImageView fitHeight="464.0" fitWidth="419.0" opacity="0.83" pickOnBounds="true">
          <image>
             <Image url="@../assets/Login.jpg" />
          </image>
@@ -21,9 +20,9 @@
             <Font name="Leelawadee UI Bold" size="38.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="419.0" layoutY="126.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="Name" />
-      <JFXTextField layoutX="416.0" layoutY="193.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="E-Mail" />
-      <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="639.0" layoutY="329.0" onMouseClicked="#nxtbtnOnAction" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+      <JFXTextField fx:id="txtName" layoutX="419.0" layoutY="126.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="Name" />
+      <JFXTextField fx:id="txtEmail" layoutX="416.0" layoutY="193.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="E-Mail" />
+      <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="630.0" layoutY="308.0" onMouseClicked="#nxtbtnOnAction" opacity="0.62" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/nextbtn.png" />
          </image>
@@ -31,6 +30,30 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <JFXPasswordField layoutX="416.0" layoutY="262.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="Password" />
+      <JFXTextField fx:id="txtPassword" layoutX="415.0" layoutY="254.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="Password" />
+      <Label layoutX="462.0" layoutY="300.0" onMouseClicked="#areYouNewOnClickAction" opacity="0.62" prefHeight="17.0" prefWidth="133.0" text="Are You New?" textFill="#002bff">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblError" layoutX="371.0" layoutY="367.0" opacity="0.62" prefHeight="17.0" prefWidth="315.0" text="                  error" textFill="#ff000d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblforgetpw" layoutX="371.0" layoutY="390.0" opacity="0.62" prefHeight="17.0" prefWidth="315.0" text="                  error" textFill="#ff000d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
    </children>
 </AnchorPane>
