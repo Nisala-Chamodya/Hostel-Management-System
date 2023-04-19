@@ -52,6 +52,20 @@ public class UserDAOImpl implements UserDAO {
 
         return obList;
     }
+
+    @Override
+    public boolean update(User user) {
+        Session session = FactoryConfiguaration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        session.update(user);
+
+        transaction.commit();
+        session.close();
+
+
+        return true;
+    }
 }
 
 

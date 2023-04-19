@@ -8,4 +8,5 @@ import lk.blacky.hostel.dto.UserDTO;
 public interface UserBO extends SuperBO{
     boolean saveUser(UserDTO dto);
     ObservableList<UserDTO> getAllUser();
+    boolean updatePassword(UserDTO dto);
 }

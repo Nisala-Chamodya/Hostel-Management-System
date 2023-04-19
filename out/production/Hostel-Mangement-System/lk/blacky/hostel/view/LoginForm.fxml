@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -20,9 +21,9 @@
             <Font name="Leelawadee UI Bold" size="38.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtName" layoutX="419.0" layoutY="126.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="Name" />
-      <JFXTextField fx:id="txtEmail" layoutX="416.0" layoutY="193.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="E-Mail" />
-      <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="630.0" layoutY="308.0" onMouseClicked="#nxtbtnOnAction" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+      <JFXTextField fx:id="txtName" layoutX="387.0" layoutY="125.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="Name" />
+      <JFXTextField fx:id="txtEmail" layoutX="387.0" layoutY="192.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="E-Mail" />
+      <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="621.0" layoutY="346.0" onMouseClicked="#nxtbtnOnAction" opacity="0.62" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/nextbtn.png" />
          </image>
@@ -30,8 +31,8 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <JFXTextField fx:id="txtPassword" layoutX="415.0" layoutY="254.0" opacity="0.62" prefHeight="26.0" prefWidth="257.0" promptText="Password" />
-      <Label layoutX="462.0" layoutY="300.0" onMouseClicked="#areYouNewOnClickAction" opacity="0.62" prefHeight="17.0" prefWidth="133.0" text="Are You New?" textFill="#002bff">
+      <JFXTextField fx:id="txtPassword" layoutX="382.0" layoutY="249.0" onKeyReleased="#showPasswordOnAction" opacity="0.62" prefHeight="31.0" prefWidth="267.0" promptText="Password" />
+      <Label layoutX="449.0" layoutY="293.0" onMouseClicked="#areYouNewOnClickAction" opacity="0.62" prefHeight="17.0" prefWidth="133.0" text="Are You New?" textFill="#002bff">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
@@ -39,7 +40,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <Label fx:id="lblError" layoutX="371.0" layoutY="367.0" opacity="0.62" prefHeight="17.0" prefWidth="315.0" text="                  error" textFill="#ff000d">
+      <Label fx:id="lblError" layoutX="371.0" layoutY="393.0" opacity="0.62" prefHeight="17.0" prefWidth="315.0" text="                  error" textFill="#ff000d">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
@@ -47,7 +48,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <Label fx:id="lblforgetpw" layoutX="371.0" layoutY="390.0" opacity="0.62" prefHeight="17.0" prefWidth="315.0" text="                  error" textFill="#ff000d">
+      <Label fx:id="lblforgetpw" layoutX="440.0" layoutY="338.0" onMouseClicked="#txtUpdatePasswordOnAction" opacity="0.62" prefHeight="17.0" prefWidth="133.0" text="Update Password?" textFill="#0500ff">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
@@ -55,5 +56,22 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
+      <JFXPasswordField fx:id="txtHidepw" layoutX="382.0" layoutY="249.0" onKeyReleased="#hidePasswordOnAction" opacity="0.62" prefHeight="31.0" prefWidth="267.0" promptText="Password" />
+      <ImageView fx:id="imgHideEye" fitHeight="31.0" fitWidth="56.0" layoutX="606.0" layoutY="249.0" onMouseClicked="#hideEyeOnClickAction" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/hideeye.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgOpenEye" fitHeight="31.0" fitWidth="56.0" layoutX="606.0" layoutY="249.0" onMouseClicked="#showEyeOnClickAction" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visibleEye.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
    </children>
 </AnchorPane>

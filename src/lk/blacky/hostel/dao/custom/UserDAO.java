@@ -7,4 +7,5 @@ import lk.blacky.hostel.entity.User;
 public interface UserDAO<T,id> extends SuperDAO {
     boolean save(User t);
     ObservableList<T> getAll();
+    boolean update(User t);
 }
